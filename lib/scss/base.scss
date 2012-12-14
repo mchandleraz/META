@@ -1,0 +1,200 @@
+/* Base Styles for META */
+/* Author: Matt Chandler */
+/* http://mattchandleraz.com */
+
+$dkbrown: #2b2823;
+$orange: #cc3917;
+$cream: #f9fadc;
+$red: #cc1717;
+$blue: #175fcc;
+
+$serif: serif;
+$sans: sans-serif;
+
+body {
+	background: $dkbrown;
+	font-family: $sans;
+	color: $cream;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	min-height:460px;
+	text-align: center;
+}
+
+h1, .h1 {
+	font-size:1.6em;
+}
+
+p {
+	font-size:.8em;
+}
+
+.wrap {
+	width:80%;
+	margin:0 auto;
+}
+
+.button {
+	padding:10px;
+	margin:10px 0;
+	font-family: $serif;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-size: 1.4em;
+	
+
+}
+
+.orange-button {
+		background: $orange;
+		color: $cream;
+		font-weight: bold;
+
+}
+
+.green-button {
+		background: $orange;
+		color: $cream;
+		font-weight: bold;
+
+}
+
+.blue-button {
+		background: $blue;
+		color: $cream;
+		font-weight: bold;
+
+}
+
+.red-button {
+		background: $red;
+		color: $cream;
+		font-weight: bold;
+
+}
+
+a {
+	
+	color: $cream;
+	text-decoration: none;
+
+}
+
+.first {
+	margin-left:0px !important;
+
+}
+
+.last {
+	margin-right:0px !important;
+}
+
+#logo {
+
+	text-align:center;
+
+	h1 {
+
+	    text-shadow:-3px 3px 0 darken($orange,15%);
+	    color: $orange;
+	    font-family: $sans;
+	    font-size: 5.2em;
+	    margin-bottom: 0;
+
+	}
+
+	h2 {
+
+		color: $cream;
+		text-transform: uppercase;
+		font-size: .6em;
+		margin-top: 0;
+
+	}
+
+}
+
+form {
+
+	width:100%;
+	border: none;
+
+}
+
+input, textarea {
+
+		width: 100%;
+		display: block;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+		   		appearance: none;
+		/* This fixes the strange discrepancy between input=text and input:submit */
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		margin: 10px 0;
+		padding: 5px;
+		border: none;
+
+}
+
+select {
+
+	width: 100%;
+	display: block;
+	-webkit-appearance: menulist-button;
+	   -moz-appearance: menulist;
+		   	appearance: menulist;
+	/* This fixes the strange discrepancy between input=text and input:submit */
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	margin: 10px 0;
+	padding: 5px;
+	border: none;	
+}
+
+footer {
+
+	background: url(../img/footer.jpg) top left no-repeat;
+	color: $cream;
+	position: absolute;
+	/*left: 0px;
+	bottom:0px;*/
+	min-height: 100px;
+	width: 100%;
+	margin-top: 50px;
+
+	#inner-footer {
+
+		text-align: left;
+		clear: both;
+
+		p {}
+
+		section {
+		}
+
+		ul {
+			
+			float: left;
+			display: inline-block;
+			clear: none;
+
+			li {
+
+				a {
+					padding: 10px;
+				}
+
+			}
+
+		}
+
+	}
+
+	#attribution {
+		clear:both;
+	}
+
+}

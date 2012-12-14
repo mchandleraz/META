@@ -1,0 +1,172 @@
+/* Base Styles for META */
+/* Author: Matt Chandler */
+/* http://mattchandleraz.com */
+/* line 14, ../scss/base.scss */
+body {
+  background: #2b2823;
+  font-family: sans-serif;
+  color: #f9fadc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-height: 460px;
+  text-align: center;
+}
+
+/* line 24, ../scss/base.scss */
+h1, .h1 {
+  font-size: 1.6em;
+}
+
+/* line 28, ../scss/base.scss */
+p {
+  font-size: .8em;
+}
+
+/* line 32, ../scss/base.scss */
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 37, ../scss/base.scss */
+.button {
+  padding: 10px;
+  margin: 10px 0;
+  font-family: serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.4em;
+}
+
+/* line 48, ../scss/base.scss */
+.orange-button {
+  background: #cc3917;
+  color: #f9fadc;
+  font-weight: bold;
+}
+
+/* line 55, ../scss/base.scss */
+.green-button {
+  background: #cc3917;
+  color: #f9fadc;
+  font-weight: bold;
+}
+
+/* line 62, ../scss/base.scss */
+.blue-button {
+  background: #175fcc;
+  color: #f9fadc;
+  font-weight: bold;
+}
+
+/* line 69, ../scss/base.scss */
+.red-button {
+  background: #cc1717;
+  color: #f9fadc;
+  font-weight: bold;
+}
+
+/* line 76, ../scss/base.scss */
+a {
+  color: #f9fadc;
+  text-decoration: none;
+}
+
+/* line 83, ../scss/base.scss */
+.first {
+  margin-left: 0px !important;
+}
+
+/* line 88, ../scss/base.scss */
+.last {
+  margin-right: 0px !important;
+}
+
+/* line 92, ../scss/base.scss */
+#logo {
+  text-align: center;
+}
+/* line 96, ../scss/base.scss */
+#logo h1 {
+  text-shadow: -3px 3px 0 #87260f;
+  color: #cc3917;
+  font-family: sans-serif;
+  font-size: 5.2em;
+  margin-bottom: 0;
+}
+/* line 106, ../scss/base.scss */
+#logo h2 {
+  color: #f9fadc;
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-top: 0;
+}
+
+/* line 117, ../scss/base.scss */
+form {
+  width: 100%;
+  border: none;
+}
+
+/* line 124, ../scss/base.scss */
+input, textarea {
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* This fixes the strange discrepancy between input=text and input:submit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+}
+
+/* line 141, ../scss/base.scss */
+select {
+  width: 100%;
+  display: block;
+  -webkit-appearance: menulist-button;
+  -moz-appearance: menulist;
+  appearance: menulist;
+  /* This fixes the strange discrepancy between input=text and input:submit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 5px;
+  border: none;
+}
+
+/* line 157, ../scss/base.scss */
+footer {
+  background: url(../img/footer.jpg) top left no-repeat;
+  color: #f9fadc;
+  position: absolute;
+  /*left: 0px;
+  bottom:0px;*/
+  min-height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+/* line 168, ../scss/base.scss */
+footer #inner-footer {
+  text-align: left;
+  clear: both;
+}
+/* line 178, ../scss/base.scss */
+footer #inner-footer ul {
+  float: left;
+  display: inline-block;
+  clear: none;
+}
+/* line 186, ../scss/base.scss */
+footer #inner-footer ul li a {
+  padding: 10px;
+}
+/* line 196, ../scss/base.scss */
+footer #attribution {
+  clear: both;
+}
