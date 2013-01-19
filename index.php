@@ -33,14 +33,14 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
         
     	echo "<section class=\"wrap\"><h1>Dashboard</h1>";
         echo "<a href=\"create_alert.php\"><input type=\"button\" class=\"button green-button\" value=\"Create an Alert\"></a>
-        	  <a href=\"#\"><input type=\"button\" class=\"button blue-button\" value=\"View Alerts\"></a>
+        	  <a href=\"view_alerts.php\"><input type=\"button\" class=\"button blue-button\" value=\"View Alerts\"></a>
         	  <a href=\"logout.php\"><input type=\"button\" class=\"button red-button\" value=\"Log Out\"></a>
         	  </section>";
     }
     else
     {
     	 echo "<h1>Error</h1>";
-        echo "<p>Sorry, your account could not be found. Please <a href=\"index.php\">click here to try again</a>.</p>";
+        echo "<p>Sorry, your account could not be found. Please <a href=\"index.php\">click here</a> to try again or register.</p>";
     }
 }
 else
