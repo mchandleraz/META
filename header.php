@@ -2,8 +2,8 @@
 session_start();
 
 $dbhost = "localhost";
-$dbname = "";
-$dbuser = "";
+$dbname = "meta";
+$dbuser = "root";
 $dbpass = "";
 
 mysql_connect($dbhost, $dbuser, $dbpass) or die("MySQL Error: " . mysql_error());
@@ -102,7 +102,7 @@ mysql_select_db($dbname) or die("MySQL Error: " . mysql_error());
 			var lat = position.coords.latitude;
 			var lon = position.coords.longitude;
 
-			// Send lat & lon vars to hidden
+			// Send lat & lon vars to hidden form fields
 			document.getElementById('lat').value = lat;
 			document.getElementById('lon').value = lon;
 

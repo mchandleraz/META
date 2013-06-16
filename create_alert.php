@@ -8,12 +8,11 @@ $query = "SELECT * FROM locations";
 $result = mysql_query($query) or die(mysql_error());
 
 while ($row = mysql_fetch_assoc($result)) {
-                $dd .="<option value='{$row['state']}'>{$row['state']}</option>";
-            }
+    $state = $row['state'];
+    $options .="<option value=\"$state\">" . $state . "</option>";
+}
 
-if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
-{
-    ?>
+if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])) { ?>
     <section class="wrap">
         <h1>Travel Assistance</h1>
 
@@ -22,8 +21,7 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
                 <input type="text" name="username" id="username" placeholder="username" />
                 <input type="text" name="name" id="name" placeholder="name" />
                 <input type="text" name="email" id="email" placeholder="email" />
-                <!-- Save this for registration page -->
-                <!-- <select name="state"><?php echo $dd ?> -->
+                <select name="state"><?php echo $options ?></select>
                 <input type="text" name="phone" id="phone" placeholder="phone number" />
                 <input type="text" name="needs" id="needs" placeholder="what do you need?" />
                 <input type="button" class="button orange-button" id="getGeo" value="Get Location">

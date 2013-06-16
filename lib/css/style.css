@@ -5,7 +5,6 @@
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
-/* line 20, ../scss/normalize.scss */
 article,
 aside,
 details,
@@ -22,7 +21,6 @@ section {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-/* line 30, ../scss/normalize.scss */
 audio,
 canvas,
 video {
@@ -34,7 +32,6 @@ video {
 /*
  * Prevents modern browsers from displaying 'audio' without controls
  */
-/* line 40, ../scss/normalize.scss */
 audio:not([controls]) {
   display: none;
 }
@@ -43,7 +40,6 @@ audio:not([controls]) {
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
  */
-/* line 49, ../scss/normalize.scss */
 [hidden] {
   display: none;
 }
@@ -58,7 +54,6 @@ audio:not([controls]) {
  * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 66, ../scss/normalize.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -73,7 +68,6 @@ html {
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
-/* line 77, ../scss/normalize.scss */
 body {
   margin: 0;
 }
@@ -81,7 +75,6 @@ body {
 /* 
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-/* line 89, ../scss/normalize.scss */
 body,
 button,
 input,
@@ -96,7 +89,6 @@ textarea {
 /*
  * Addresses outline displayed oddly in Chrome
  */
-/* line 102, ../scss/normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -105,7 +97,6 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 112, ../scss/normalize.scss */
 a:hover,
 a:active {
   outline: 0;
@@ -117,7 +108,6 @@ a:active {
 /*
  * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
  */
-/* line 125, ../scss/normalize.scss */
 h1 {
   font-size: 2em;
 }
@@ -125,7 +115,6 @@ h1 {
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 133, ../scss/normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -133,13 +122,11 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 142, ../scss/normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 146, ../scss/normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -147,7 +134,6 @@ blockquote {
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 154, ../scss/normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -155,7 +141,6 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 162, ../scss/normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -165,7 +150,6 @@ mark {
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 175, ../scss/normalize.scss */
 pre,
 code,
 kbd,
@@ -178,7 +162,6 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 185, ../scss/normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -190,20 +173,17 @@ pre {
  * 2. Addresses quote property not supported in S4
  */
 /* 1 */
-/* line 198, ../scss/normalize.scss */
 q {
   quotes: none;
 }
 
 /* 2 */
-/* line 205, ../scss/normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 210, ../scss/normalize.scss */
 small {
   font-size: 75%;
 }
@@ -212,7 +192,6 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 220, ../scss/normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -221,12 +200,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 227, ../scss/normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 231, ../scss/normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -234,19 +211,16 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-/* line 241, ../scss/normalize.scss */
 ul,
 ol {
   margin-left: 0;
   padding: 0 0 0 40px;
 }
 
-/* line 246, ../scss/normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 251, ../scss/normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -261,7 +235,6 @@ nav ol {
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 267, ../scss/normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -272,7 +245,6 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9 
  */
-/* line 276, ../scss/normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -283,7 +255,6 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 289, ../scss/normalize.scss */
 figure {
   margin: 0;
 }
@@ -294,7 +265,6 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 302, ../scss/normalize.scss */
 form {
   margin: 0;
 }
@@ -302,7 +272,6 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 310, ../scss/normalize.scss */
 fieldset {
   border: none;
   margin: 0 2px;
@@ -313,7 +282,6 @@ fieldset {
  * 1. Corrects color not being inherited in IE6/7/8/9
  * 2. Corrects alignment displayed oddly in IE6/7
  */
-/* line 321, ../scss/normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -326,7 +294,6 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 335, ../scss/normalize.scss */
 button,
 input,
 select,
@@ -344,7 +311,6 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 347, ../scss/normalize.scss */
 button,
 input {
   line-height: normal;
@@ -357,7 +323,6 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 361, ../scss/normalize.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -374,7 +339,6 @@ input[type="submit"] {
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
  */
-/* line 373, ../scss/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -387,7 +351,6 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 383, ../scss/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -400,7 +363,6 @@ input[type="search"] {
 /*
  * Removes inner padding that is displayed in S5, Chrome on OS X
  */
-/* line 394, ../scss/normalize.scss */
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -409,7 +371,6 @@ input[type="search"]::-webkit-search-decoration {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 404, ../scss/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -420,7 +381,6 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 414, ../scss/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -434,7 +394,6 @@ textarea {
 /* 
  * Remove most spacing between table cells
  */
-/* line 428, ../scss/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -446,18 +405,15 @@ I added these extra styles as a more personalized reset. Feel free
 to remove them if you like or add your own. If you want to update
 the normalize styles, make sure to edit from this point up.
 ******************************************************************/
-/* line 440, ../scss/normalize.scss */
 ul, ol {
   padding: 0;
   list-style-type: none;
 }
 
-/* line 445, ../scss/normalize.scss */
 dd {
   margin: 0;
 }
 
-/* line 451, ../scss/normalize.scss */
 .sidebar ul,
 .sidebar ol,
 .commentlist {
@@ -465,7 +421,6 @@ dd {
 }
 
 /* proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens) */
-/* line 456, ../scss/normalize.scss */
 p {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -473,21 +428,18 @@ p {
   hyphens: auto;
 }
 
-/* line 465, ../scss/normalize.scss */
 b,
 strong,
 .strong {
   font-weight: bold;
 }
 
-/* line 471, ../scss/normalize.scss */
 dfn,
 em,
 .em {
   font-style: italic;
 }
 
-/* line 475, ../scss/normalize.scss */
 small, .small {
   font-size: 75%;
 }
@@ -495,7 +447,6 @@ small, .small {
 /* Base Styles for META */
 /* Author: Matt Chandler */
 /* http://mattchandleraz.com */
-/* line 14, ../scss/base.scss */
 body {
   background: #2b2823;
   font-family: sans-serif;
@@ -506,23 +457,19 @@ body {
   text-align: center;
 }
 
-/* line 24, ../scss/base.scss */
 h1, .h1 {
   font-size: 1.6em;
 }
 
-/* line 28, ../scss/base.scss */
 p {
   font-size: .8em;
 }
 
-/* line 32, ../scss/base.scss */
 .wrap {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 37, ../scss/base.scss */
 .button {
   padding: 10px;
   margin: 10px 0;
@@ -532,55 +479,46 @@ p {
   font-size: 1.4em;
 }
 
-/* line 48, ../scss/base.scss */
 .orange-button {
   background: #cc3917;
   color: #f9fadc;
   font-weight: bold;
 }
 
-/* line 55, ../scss/base.scss */
 .green-button {
   background: #cc3917;
   color: #f9fadc;
   font-weight: bold;
 }
 
-/* line 62, ../scss/base.scss */
 .blue-button {
   background: #175fcc;
   color: #f9fadc;
   font-weight: bold;
 }
 
-/* line 69, ../scss/base.scss */
 .red-button {
   background: #cc1717;
   color: #f9fadc;
   font-weight: bold;
 }
 
-/* line 76, ../scss/base.scss */
 a {
   color: #f9fadc;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-/* line 83, ../scss/base.scss */
 .first {
   margin-left: 0px !important;
 }
 
-/* line 88, ../scss/base.scss */
 .last {
   margin-right: 0px !important;
 }
 
-/* line 92, ../scss/base.scss */
 #logo {
   text-align: center;
 }
-/* line 96, ../scss/base.scss */
 #logo h1 {
   text-shadow: -3px 3px 0 #87260f;
   color: #cc3917;
@@ -588,7 +526,6 @@ a {
   font-size: 5.2em;
   margin-bottom: 0;
 }
-/* line 106, ../scss/base.scss */
 #logo h2 {
   color: #f9fadc;
   text-transform: uppercase;
@@ -596,13 +533,11 @@ a {
   margin-top: 0;
 }
 
-/* line 117, ../scss/base.scss */
 form {
   width: 100%;
   border: none;
 }
 
-/* line 124, ../scss/base.scss */
 input, textarea {
   width: 100%;
   display: block;
@@ -618,7 +553,6 @@ input, textarea {
   border: none;
 }
 
-/* line 141, ../scss/base.scss */
 select {
   width: 100%;
   display: block;
@@ -634,7 +568,6 @@ select {
   border: none;
 }
 
-/* line 157, ../scss/base.scss */
 footer {
   background: url(../img/footer.jpg) top left no-repeat;
   color: #f9fadc;
@@ -645,22 +578,18 @@ footer {
   width: 100%;
   margin-top: 50px;
 }
-/* line 168, ../scss/base.scss */
 footer #inner-footer {
   text-align: left;
   clear: both;
 }
-/* line 178, ../scss/base.scss */
 footer #inner-footer ul {
   float: left;
   display: inline-block;
   clear: none;
 }
-/* line 186, ../scss/base.scss */
 footer #inner-footer ul li a {
   padding: 10px;
 }
-/* line 196, ../scss/base.scss */
 footer #attribution {
   clear: both;
 }
