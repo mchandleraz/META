@@ -30,22 +30,20 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
         $_SESSION['Username'] = $username;
         $_SESSION['EmailAddress'] = $email;
         $_SESSION['LoggedIn'] = 1;
-        
-    	echo "<section class=\"wrap\"><h1>Dashboard</h1>";
-        echo "<a href=\"create_alert.php\"><input type=\"button\" class=\"button green-button\" value=\"Create an Alert\"></a>
-        	  <a href=\"view_alerts.php\"><input type=\"button\" class=\"button blue-button\" value=\"View Alerts\"></a>
-        	  <a href=\"logout.php\"><input type=\"button\" class=\"button red-button\" value=\"Log Out\"></a>
-        	  </section>";
-    }
-    else
-    {
-    	 echo "<h1>Error</h1>";
-        echo "<p>Sorry, your account could not be found. Please <a href=\"index.php\">click here</a> to try again or register.</p>";
-    }
-}
-else
-{
-	?>
+    ?>
+    <section class="wrap"><h1>Dashboard</h1>
+        <a href="create_alert.php"><input type="button" class="button green-button" value="Create an Alert"></a>
+        <a href="view_alerts.php"><input type="button" class="button blue-button" value="View Alerts"></a>
+        <a href="logout.php"><input type="button" class="button red-button" value="Log Out"></a>
+    </section>
+
+    <?php } else { ?>
+    
+    <h1>Error</h1>
+    <p>Sorry, your account could not be found. Please <a href="index.php">click here</a> to try again or register.</p>
+
+    <?php }
+    } else { ?>
     
 	<section class="wrap">
 	   <p>Please either login below, or <a href="register.php">register</a>.</p>
@@ -60,8 +58,6 @@ else
     </section>
 
 
-   <?php
-}
-?>
+<?php } ?>
 
 <?php include "footer.php"; ?>
