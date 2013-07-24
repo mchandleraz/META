@@ -29,21 +29,19 @@ if(!empty($_POST['username']) && !empty($_POST['password']))
     else
     {
      	$registerquery = mysql_query("INSERT INTO users (Username, Password, Name, EmailAddress, Phone, City, State, Resources) VALUES('".$username."', '".$password."', '".$name."', '".$email."', '".$phone."', '".$city."', '".$state."', '".$resources."')");
-        if($registerquery)
-        {
+        if($registerquery) {
 ?>        
         	<section class="wrap">
      			<h1>Success</h1>
 	        	<p>Your account was successfully created.</p><p>Please <a href="index.php">click here to login</a>.</p>
 	        </section>
 <?php 
-        }
-        else
-        {
+        } else {
 ?>     		
             <section class="wrap">
 	     		<h1>Error</h1>
 	        	<p>Sorry, your registration failed. Please go back and try again.</p>
+                <pre><?php echo mysql_error() ?></pre>
 	        </section>
 <?php        
         }    	

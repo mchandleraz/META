@@ -1,36 +1,32 @@
-<?php include("header.php"); ?>
+<?php
 
-		<?php
-if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
-{
-	 ?>
+include("header.php");
 
-	<section class="wrap">
-		<h1>Dashboard</h1>
-	    <a href="create_alert.php"><input type="button" class="button green-button" value="Create an Alert"></a>
-	    <a href="#"><input type="button" class="button blue-button" value="View Alerts"></a>
+if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){ ?>
 
-	    <a href="logout.php"><input type="button" class="button red-button" value="Log Out"></a>
-	</section>
+<section class="wrap">
+	<h1>Dashboard</h1>
+    <a href="create_alert.php"><input type="button" class="button green-button" value="Create an Alert"></a>
+    <a href="#"><input type="button" class="button blue-button" value="View Alerts"></a>
+
+    <a href="logout.php"><input type="button" class="button red-button" value="Log Out"></a>
+</section>
     
-    <?php
-}
-elseif(!empty($_POST['username']) && !empty($_POST['password']))
-{
+<?php
+} elseif(!empty($_POST['username']) && !empty($_POST['password'])) {
 	$username = mysql_real_escape_string($_POST['username']);
     $password = md5(mysql_real_escape_string($_POST['password']));
     
 	$checklogin = mysql_query("SELECT * FROM users WHERE Username = '".$username."' AND Password = '".$password."'");
     
-    if(mysql_num_rows($checklogin) == 1)
-    {
+    if(mysql_num_rows($checklogin) == 1) {
     	$row = mysql_fetch_array($checklogin);
         $email = $row['EmailAddress'];
         
         $_SESSION['Username'] = $username;
         $_SESSION['EmailAddress'] = $email;
         $_SESSION['LoggedIn'] = 1;
-    ?>
+?>
     <section class="wrap"><h1>Dashboard</h1>
         <a href="create_alert.php"><input type="button" class="button green-button" value="Create an Alert"></a>
         <a href="view_alerts.php"><input type="button" class="button blue-button" value="View Alerts"></a>
@@ -41,6 +37,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
     
     <h1>Error</h1>
     <p>Sorry, your account could not be found. Please <a href="index.php">click here</a> to try again or register.</p>
+    <pre><?php echo mysql_error(); ?></pre>
 
     <?php }
     } else { ?>
